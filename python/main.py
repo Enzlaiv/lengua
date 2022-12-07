@@ -1,0 +1,2 @@
+print ("amongus")
+print("supermoguis")
