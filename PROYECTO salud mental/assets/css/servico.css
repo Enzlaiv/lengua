@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+section {
+    background-image:url(/assets/img/fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    height: 50em;
+}
+
+/* Criação dos 3 containers de tamanhos iguais */
+.columns {
+    width: 33.3%;
+    padding: 4em;
+}
+
+/* Style da Lista */
+.price {
+    list-style-type: none;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/* Adição de sombra a animação */
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(255, 255, 255, 0.2)
+}
+
+/* Cabeçalho da lista */
+.price .header {
+    background-color: #391e5d;
+    color: white;
+    font-size: 25px;
+    font-family: 'roboto';
+}
+
+/* Lista de Itens */
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+/* Grey list item */
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+/* Botão de "Assinar" */
+.button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Responsividade da pagina em pequenas telas */
+
+@media only screen and (max-width: 800px) {
+    section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .columns {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
