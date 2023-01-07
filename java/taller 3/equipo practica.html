@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,
+ initial-scale=1.0">
+  <title>TAREA JAVA 1</title>
+</head>
+
+<body>
+  <h1>TAREA JAVA 1</h1>
+  <script>
+    var sum = 0;
+    var rest = 0;
+    var multi = 0;
+    var div = 0;
+    var cont_sum = 0;
+    var cont_rest = 0;
+    var cont_multi = 0;
+    var cont_div = 0;
+
+    while (true) {
+      console.log(" ___________________________________________________")
+      console.log("|                         MENÚ                      |")
+      console.log("|___________________________________________________|")
+      console.log("| 1 | Realizar una suma                             |")
+      console.log("|___|_______________________________________________|")
+      console.log("| 2 | realizar una resta                            |")
+      console.log("|___|_______________________________________________|")
+      console.log("| 3 | realizar una multiplicacion                   |")
+      console.log("|___|_______________________________________________|")
+      console.log("| 4 | realizar una division                         |")
+      console.log("|___|_______________________________________________|")
+      console.log("| 5 | mostrar detalladamente los valores ingresados |")
+      console.log("|___|_______________________________________________|")
+      console.log("| 6 | cerrar programa                               |")
+      console.log("|___|_______________________________________________|")
+      let opc = new Number(prompt(" ESCOJA UNA OPCIÓN : "));
+      let resol = 0
+
+      if (opc == 1) {
+        let a = new Number(prompt("ingrese el primer valor de la suma : "));
+        let b = new Number(prompt("ingrese el segundo valor de la suma: "));
+        resol = a + b;
+        console.log("La suma de " + a + " + " + b + " es igual a ", resol)
+        sum = sum + resol;
+        cont_sum = cont_sum + 1;
+      } else if (opc == 2) {
+        let a = new Number(prompt("ingrese el primer valor de la resta :"));
+        let b = new Number(prompt("ingrese el segundo valor de la resta :"));
+        resol = a - b;
+        console.log("La resta de " + a + " - " + b + " es igual a " + resol)
+        rest = rest + resol;
+        cont_rest = cont_rest + 1;
+      } else if (opc == 3) {
+        let a = new Number(prompt("ingrese el primer valor de la multiplicacion : "));
+        let b = new Number(prompt("ingrese el segundo valor de la multiplicacion :"));
+        resol = a * b;
+        console.log("La multiplicacion de " + a + " X " + b + " es igual a " + resol)
+        multi = multi + resol;
+        cont_multi = cont_multi + 1;
+
+      } else if (opc == 4) {
+        let a = new Number(prompt("ingrese el primer valor de la division : "));
+        let b = new Number(prompt("ingrese el segundo valor de la division : "));
+
+        resol = a / b;
+        console.log("La division de " + a + " / " + b + " es igual a " + resol)
+        div = div + resol;
+        cont_div = cont_div + 1;
+      } else if (opc == 5) {
+        
+        document.write("|SUMA * El acumulativo de las operciones es " + sum)
+        document.write("|* Esta operación se uso " + cont_sum + " veces")
+        document.write(" * El número de digitos es : " + len(sum))
+        document.write("|-------------------------------------------------------------")
+        document.write("| RESTA* El acumulativo de las operciones es " + rest)
+        document.write("|* Esta operación se uso " + cont_rest + " veces")
+        document.write("|* El número de digitos es : " + len(rest))
+        document.write("|-------------------------------------------------------------")
+        document.write("|MULTIPLICACIÓN* El acumulativo de las operciones es " + multi,)
+        document.write("|* Esta operación se uso " + cont_multi + " veces")
+        document.write("|* El número de digitos es : " + len(multi))
+        document.write("|-------------------------------------------------------------")
+        document.write("|DIVISIÓN  * El acumulativo de las operciones es " + div)
+        document.write("|* Esta operación se uso " + cont_div + " veces")
+        document.write("|* El número de digitos es : " + len(div))
+        
+      } else if (opc == 6) {
+        console.log("GRACIAS POR PARTICIPAR, BUEN DÍA")
+        break;
+      } else if (opc != 1 && opc != 2 && opc != 3 && opc != 4 && opc != 5) {
+        console.log("OPCIÓN INVALIDA !!!, INTENTELO NUEVAMENTE.")
+      }
+    }
+  </script>
+</body>
+
+</html>
