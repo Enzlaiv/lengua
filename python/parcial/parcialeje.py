@@ -1,4 +1,5 @@
-print("ingrese un valor a multiplicar")
-n=int(input())
-for i in  range(0,100):
-    print(n,"+",i,"=",n*i)
+
+n=int(input("ingrese valor a mulitplicar : "))
+for i in range(0,100):
+    z=n*i
+    print(n," x ",i," = ", z)
