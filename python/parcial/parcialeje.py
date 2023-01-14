@@ -1,4 +1,4 @@
-print("ingrese un valor a sumar")
+print("ingrese un valor a multiplicar")
 n=int(input())
-for i in  range(10,25):
-    print(n,"+",i,"=",n+i)
+for i in  range(0,100):
+    print(n,"+",i,"=",n*i)
